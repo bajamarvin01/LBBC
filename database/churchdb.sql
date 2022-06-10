@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.3
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 04, 2022 at 09:39 AM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 7.4.28
+-- Generation Time: Jun 10, 2022 at 02:03 PM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 8.0.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -199,7 +199,7 @@ CREATE TABLE `members` (
 --
 
 INSERT INTO `members` (`id`, `branch_id`, `title`, `firstname`, `lastname`, `email`, `dob`, `phone`, `occupation`, `position`, `address`, `address2`, `postal`, `city`, `state`, `country`, `sex`, `marital_status`, `member_since`, `wedding_anniversary`, `photo`, `relative`, `member_status`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Mr', 'Jude', 'Suares', 'jude@gmail.com', '2022-05-03', '09120118872', 'Professor', 'member', 'brgy.suay,himamaylan city', 'brgy.suay,himamaylan city', NULL, 'Himamaylan City', 'Negros Occidental', 'Philippines', 'male', 'single', '2009-06-09', '1970-01-01', 'profile.png', NULL, 'old', '2022-05-03 23:29:28', '2022-05-03 23:29:28');
+(2, 1, 'Mr', 'Joao', 'Gumalot', 'bajamarvin01@gmail.com', '2022-06-14', '09075837511', 'Doctor', 'senior pastor', 'Balanga city, bataan', NULL, NULL, 'Balanga', 'n/a', 'Philippines', 'male', 'single', '2022-06-01', '1970-01-01', 'profile.png', NULL, 'old', '2022-06-10 03:27:25', '2022-06-10 03:27:25');
 
 -- --------------------------------------------------------
 
@@ -408,7 +408,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `branchname`, `country`, `state`, `city`, `branchcode`, `email`, `address`, `currency`, `isadmin`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'ABUGON BAPTIST CHURCH', 'Philippines', 'Negros Occidental', 'Kabankalan City', 'ABC051820', 'abp@gmail.com', 'Brgy.Tan-awan,Kabankalan City', '₱', 'true', '$2y$10$6rgsNhlwt2MUP1eBs485YeSht6X9h5p51xkjCF.n/zh7TBHkQJPYC', NULL, '2022-05-03 00:41:59', '2022-05-03 00:41:59');
+(1, 'LANDMARK BIBLE BAPTIST CHURCH', 'Philippines', 'BATAAN', 'BALANGA City', 'LBBC01', 'LBBC@gmail.com', 'Brgy Tuyo,Balanga City', '₱', 'true', '$2y$10$6rgsNhlwt2MUP1eBs485YeSht6X9h5p51xkjCF.n/zh7TBHkQJPYC', NULL, '2022-05-03 00:41:59', '2022-05-03 00:41:59');
 
 --
 -- Indexes for dumped tables
@@ -614,7 +614,7 @@ ALTER TABLE `group_members`
 -- AUTO_INCREMENT for table `members`
 --
 ALTER TABLE `members`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `member_attendances`
